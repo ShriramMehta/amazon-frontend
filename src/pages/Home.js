@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import ProductList from "../components/ProductList";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+
 import "../styles/Home.css";
+
 import Product from "../components/Product";
+import ProductList from "../components/ProductList";
+
 import { listProducts } from "../actions/ProdcutActions";
 
 const Home = () => {
@@ -20,7 +23,7 @@ const Home = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -90,7 +93,8 @@ const Home = () => {
           </div>
           <div className="banners">
             <img
-              src="https://cdn.shopify.com/s/files/1/1780/7915/files/Game_Monitor_6a7a1deb-2d61-4307-99ac-f8c5a18d298f.jpg?8000210842524768871"
+              // src="https://cdn.shopify.com/s/files/1/1780/7915/files/Game_Monitor_6a7a1deb-2d61-4307-99ac-f8c5a18d298f.jpg?8000210842524768871"
+              src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/TheLordoftherings-Trailer/PV/3000x1200_Hero-Tall._CB631634134_.jpg"
               alt=""
             />
           </div>
