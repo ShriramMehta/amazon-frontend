@@ -1,23 +1,23 @@
-import React from 'react'
-import Rating from './Rating'
-import "../styles/Product.css"
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
+import "../styles/Product.css";
 
-const Product = ({product}) => {
+import Rating from "./Rating";
 
-    return (
-        <Link to={`/products/product/${product._id}`}>
-        <div className="product-card" >
-            <div className="product-image">
-                <img src= {product.image} alt=""/>
-            </div>
-            <h2>{product.name}</h2>
-            <Rating rating={product.rating} numRev={product.numRev}/>
-            <p>${product.price}</p>
+const Product = ({ product }) => {
+  return (
+    <Link to={`/products/product/${product._id}`}>
+      <div className="product-card">
+        <div className="product-image">
+          <img src={product.image} alt="" />
         </div>
-        </Link>
-    )
-}
+        <h2>{product.name}</h2>
+        <Rating rating={product.rating} numRev={product.numRev} />
+        <p>${product.price}</p>
+      </div>
+    </Link>
+  );
+};
 
-export default Product
+export default Product;

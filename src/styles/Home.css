@@ -1,6 +1,6 @@
 .home-page-container{
     max-width: 1600px;
-    margin: auto;
+    margin: 0;
 }
 
 .banner-container{
@@ -8,6 +8,10 @@
 }
 .banners{
     height: 26vw;
+     width: 100%; 
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* margin-bottom: -150px; */
 }
 
 .banners img{
@@ -38,3 +42,6 @@
 .slick-slide .product-card{
   margin: 0 10px;
 }
+
+
+
